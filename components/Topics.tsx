@@ -1,4 +1,4 @@
-'use client';
+
 import React from 'react'
 import { Card, CardHeader, CardTitle } from './ui/card'
 import TopicCard from './TopicCard'
@@ -19,7 +19,7 @@ function Topics({ sdata, tdata, edata, ndata }) {
                     <CardHeader>
                         <CardTitle>Sports</CardTitle>
                     </CardHeader>
-                    {sdata.articles.map((item, i) => (
+                    {sdata.articles?.map((item, i) => (
                         <TopicCard key={i} title={item.title} image={item.image} src={item.source} pubAt={item.publishedAt} url={item.url} />
                     ))}
                 </Card>
@@ -27,7 +27,7 @@ function Topics({ sdata, tdata, edata, ndata }) {
                     <CardHeader>
                         <CardTitle>Entertainment</CardTitle>
                     </CardHeader>
-                    {edata.articles.map((item, i) => (
+                    {edata.articles?.map((item, i) => (
                         <TopicCard key={i} title={item.title} image={item.image} src={item.source} pubAt={item.publishedAt} url={item.url} />
                     ))}
                 </Card>
@@ -35,7 +35,7 @@ function Topics({ sdata, tdata, edata, ndata }) {
                     <CardHeader>
                         <CardTitle>Technology</CardTitle>
                     </CardHeader>
-                    {tdata.articles.map((item, i) => (
+                    {tdata.articles?.map((item, i) => (
                         <TopicCard key={i} title={item.title} url={item.url} image={item.image} src={item.source} pubAt={item.publishedAt} />
                     ))}
                 </Card>
@@ -43,7 +43,7 @@ function Topics({ sdata, tdata, edata, ndata }) {
                     <CardHeader>
                         <CardTitle>National</CardTitle>
                     </CardHeader>
-                    {ndata.articles.map((item, i) => (
+                    {ndata.articles?.map((item, i) => (
                         <TopicCard key={i} title={item.title} url={item.url} image={item.image} src={item.source} pubAt={item.publishedAt} />
                     ))}
                 </Card>

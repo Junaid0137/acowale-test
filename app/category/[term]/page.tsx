@@ -26,7 +26,7 @@ async function Categorypage({ params: { term } }: Props) {
                 >
                     <h1 className='text-5xl font-bold'>{term}</h1>
                     <div className="grid grid-cols-1 gap-3 mt-5 max-w-3xl mx-3">
-                        {data.articles.map((item, i) => (
+                        {data.articles?.map((item, i) => (
                             <InfoCards key={i} id={i} title={item.title} desc={item.description} content={item.content} url={item.url} image={item.image} />
                         ))}
                     </div>
@@ -44,7 +44,7 @@ async function Categorypage({ params: { term } }: Props) {
                 >
                     <h1 className='text-5xl font-bold'>{term}</h1>
                     <div className="grid grid-cols-1 gap-3 mt-5 max-w-3xl mx-auto">
-                        {data.articles.map((item, i) => (
+                        {data.articles?.map((item, i) => (
                             <HCard key={i} id={i} title={item.title} desc={item.description} content={item.content} url={item.url} image={item.image} src={item.source} />
                         ))}
                     </div>
