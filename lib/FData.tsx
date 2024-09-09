@@ -6,7 +6,7 @@ async function FData() {
     const sdata = await getMaxCategory('sports');
     const edata = await getMaxCategory('entertainment');
     const tdata = await getMaxCategory('technology');
-    const ndata = await getMaxCategory('nation');
+    const ndata = await getMaxCategory('science');
     return (
         <div>
             <Topics sdata={sdata} edata={edata} tdata={tdata} ndata={ndata} />

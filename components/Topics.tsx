@@ -41,7 +41,7 @@ function Topics({ sdata, tdata, edata, ndata }) {
                 </Card>
                 <Card>
                     <CardHeader>
-                        <CardTitle>National</CardTitle>
+                        <CardTitle>Science</CardTitle>
                     </CardHeader>
                     {ndata.articles?.map((item, i) => (
                         <TopicCard key={i} title={item.title} url={item.url} image={item.image} src={item.source} pubAt={item.publishedAt} />
