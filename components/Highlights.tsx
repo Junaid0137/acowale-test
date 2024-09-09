@@ -6,7 +6,7 @@ import { getMaxCategory } from '@/lib/getApi';
 
 async function Highlights() {
     const sdata = await getMaxCategory('general');
-    const hdata = await getMaxCategory('health');
+    const hdata = await getMaxCategory('sports');
     return (
         <div className='mt-14'>
             <div className='flex flex-row'>

@@ -7,8 +7,8 @@ import { getMaxCategory } from '@/lib/getApi';
 async function Topics() {
     const sdata = await getMaxCategory('sports');
     const edata = await getMaxCategory('entertainment');
-    const tdata = await getMaxCategory('technology');
-    const ndata = await getMaxCategory('science');
+    const tdata = await getMaxCategory('general');
+    const ndata = await getMaxCategory('world');
     return (
         <div className='mt-20'>
 
@@ -37,7 +37,7 @@ async function Topics() {
                 </Card>
                 <Card>
                     <CardHeader>
-                        <CardTitle>Technology</CardTitle>
+                        <CardTitle>General</CardTitle>
                     </CardHeader>
                     {tdata.articles?.map((item, i) => (
                         <TopicCard key={i} title={item.title} url={item.url} image={item.image} src={item.source} pubAt={item.publishedAt} />
@@ -45,7 +45,7 @@ async function Topics() {
                 </Card>
                 <Card>
                     <CardHeader>
-                        <CardTitle>Science</CardTitle>
+                        <CardTitle>World</CardTitle>
                     </CardHeader>
                     {ndata.articles?.map((item, i) => (
                         <TopicCard key={i} title={item.title} url={item.url} image={item.image} src={item.source} pubAt={item.publishedAt} />
