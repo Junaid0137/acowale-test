@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import HCard from '@/components/HCard';
 import InfoCards from '@/components/InfoCards';
-import { getCategory, getGeneral, getWorld } from '@/lib/getApi';
+import { getCategory } from '@/lib/getApi';
 import React from 'react'
 import * as motion from "framer-motion/client"
 // eslint-disable-next-line @typescript-eslint/ban-types, @typescript-eslint/no-unused-vars
@@ -27,7 +27,7 @@ async function Categorypage({ params: { term } }: Props) {
                     <h1 className='text-5xl font-bold'>{term}</h1>
                     <div className="grid grid-cols-1 gap-3 mt-5 max-w-3xl mx-3">
                         {data.articles.map((item, i) => (
-                            <InfoCards key={i} id={i} term={term} title={item.title} desc={item.description} content={item.content} url={item.url} image={item.image} src={item.source} />
+                            <InfoCards key={i} id={i} title={item.title} desc={item.description} content={item.content} url={item.url} image={item.image} />
                         ))}
                     </div>
                 </motion.div>

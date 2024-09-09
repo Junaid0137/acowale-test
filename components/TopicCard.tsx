@@ -13,7 +13,7 @@ function TopicCard({ title, image, src, pubAt, url }) {
                 <div>
                     <div className='mb-2'>
                         <Link href={src.url}>
-                            <p1>{src.name}</p1>
+                            <p>{src.name}</p>
                         </Link>
                     </div>
                     <Link href={url}>
@@ -23,7 +23,7 @@ function TopicCard({ title, image, src, pubAt, url }) {
                 <img src={image} alt='' className='h-20 w-24 rounded-lg' />
             </div>
             <div className=''>
-                <p1 className='mx-4'>{datePart}</p1>
+                <p className='mx-4'>{datePart}</p>
             </div>
             <Separator className='mx-4 mt-2' />
         </CardContent>
