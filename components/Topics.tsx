@@ -6,7 +6,7 @@ import { ChevronRightIcon } from '@radix-ui/react-icons';
 function Topics({ sdata, tdata, edata, ndata }) {
 
     return (
-        <div className='h-screen mt-20'>
+        <div className='h-screen mt-20 pb-20'>
 
             <div className='flex flex-row'>
                 <h1 className='text-4xl mx-5 md:mx-0 font-bold mb-7 md:mb-10 mr-4'>Topics</h1>
