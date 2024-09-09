@@ -42,7 +42,7 @@ function Nav() {
                                 <NavigationMenuLink href={'/category/sports'} className={navigationMenuTriggerStyle()}>Sports</NavigationMenuLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <NavigationMenuLink href={'/category/science'} className={navigationMenuTriggerStyle()}>science</NavigationMenuLink>
+                                <NavigationMenuLink href={'/category/science'} className={navigationMenuTriggerStyle()}>Science</NavigationMenuLink>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
                                 <NavigationMenuLink href={'/category/health'} className={navigationMenuTriggerStyle()}>Health</NavigationMenuLink>

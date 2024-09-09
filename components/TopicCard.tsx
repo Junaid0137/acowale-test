@@ -22,7 +22,7 @@ function TopicCard({ title, image, src, pubAt, url }) {
                 </div>
                 <img src={image} alt='' className='h-20 w-24 rounded-lg' />
             </div>
-            <div className=''>
+            <div className='text-gray-400 pt-1 pb-1'>
                 <p className='mx-4'>{datePart}</p>
             </div>
             <Separator className='mx-4 mt-2' />

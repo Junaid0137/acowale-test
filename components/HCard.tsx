@@ -10,14 +10,16 @@ function HCard({ id, title, desc, content, url, image, src }) {
         <div>
             <Card key={id} className='flex flex-row pb-5'>
                 <div className='w-1/2'>
-                    <div className='space-y-4 pl-8'>
-                        <div className='rounded-xl overflow-hidden relative -mb-3'>
-                            <img src={image} className=' h-60 w-80 object-contain' alt='' />
+                    <div className='space-y-4'>
+                        <div className='rounded-xl overflow-hidden relative -mb-3 h-50 w-80 m-5 mb-2'>
+                            <img src={image} className='h-full w-full object-cover' alt='' />
                         </div>
-                        <Link href={url}>
-                            <CardTitle className='hover:underline'>{title}</CardTitle>
-                        </Link>
-                        <CardDescription >{desc}</CardDescription>
+                        <div className='m-5 ml-6 space-y-2'>
+                            <Link href={url}>
+                                <CardTitle className='hover:underline'>{title}</CardTitle>
+                            </Link>
+                            <CardDescription >{desc}</CardDescription>
+                        </div>
                     </div>
                 </div>
                 <div className='w-1/2 my-auto'>
@@ -27,7 +29,7 @@ function HCard({ id, title, desc, content, url, image, src }) {
                     <CardContent className='text-l'>{Ncontent}</CardContent>
                     <div className='flex justify-end pr-12'>
                         <Link href={url}>
-                            <Button>More</Button>
+                            <Button className='bg-black'>More</Button>
                         </Link>
                     </div>
                 </div>
