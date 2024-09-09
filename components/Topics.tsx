@@ -2,6 +2,7 @@
 import React from 'react'
 import { Card, CardHeader, CardTitle } from './ui/card'
 import TopicCard from './TopicCard'
+import { ChevronRightIcon } from '@radix-ui/react-icons';
 function Topics({ sdata, tdata, edata, ndata }) {
 
     return (
@@ -10,9 +11,7 @@ function Topics({ sdata, tdata, edata, ndata }) {
             <div className='flex flex-row'>
                 <h1 className='text-4xl mx-5 md:mx-0 font-bold mb-7 md:mb-10 mr-4'>Topics</h1>
                 <div className='my-2 font-bold'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                    </svg>
+                    <ChevronRightIcon className='h-8 w-8' />
                 </div>
             </div>
             <div className='grid grid-cols-1 mx-4 md:mx-auto md:grid-cols-2 xl:grid-cols-3 gap-5 mt-5'>
