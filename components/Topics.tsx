@@ -3,10 +3,14 @@ import React from 'react'
 import { Card, CardHeader, CardTitle } from './ui/card'
 import TopicCard from './TopicCard'
 import { ChevronRightIcon } from '@radix-ui/react-icons';
-function Topics({ sdata, tdata, edata, ndata }) {
-
+import { getMaxCategory } from '@/lib/getApi';
+async function Topics() {
+    const sdata = await getMaxCategory('sports');
+    const edata = await getMaxCategory('entertainment');
+    const tdata = await getMaxCategory('technology');
+    const ndata = await getMaxCategory('science');
     return (
-        <div className='h-screen mt-20 pb-20'>
+        <div className='mt-20'>
 
             <div className='flex flex-row'>
                 <h1 className='text-4xl mx-5 md:mx-0 font-bold mb-7 md:mb-10 mr-4'>Topics</h1>
@@ -19,7 +23,7 @@ function Topics({ sdata, tdata, edata, ndata }) {
                     <CardHeader>
                         <CardTitle>Sports</CardTitle>
                     </CardHeader>
-                    {sdata.articles?.map((item, i) => (
+                    {sdata?.articles?.map((item, i) => (
                         <TopicCard key={i} title={item.title} image={item.image} src={item.source} pubAt={item.publishedAt} url={item.url} />
                     ))}
                 </Card>
