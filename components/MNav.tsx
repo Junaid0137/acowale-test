@@ -39,7 +39,7 @@ function MNav() {
                     </NavigationMenuItem>
                 </NavigationMenu>
             </div>
-            <div className=''>
+            <div className='mr-4'>
                 <SearchInput />
             </div>
         </nav>

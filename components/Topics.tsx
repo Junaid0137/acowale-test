@@ -11,14 +11,13 @@ async function Topics() {
     const ndata = await getMaxCategory('world');
     return (
         <div className='mt-20'>
-
             <div className='flex flex-row'>
-                <h1 className='text-4xl mx-5 md:mx-0 font-bold mb-7 md:mb-10 mr-4'>Topics</h1>
+                <h1 className='text-4xl mx-5 xl:mx-0 font-bold mb-7 md:mb-10 mr-4'>Topics</h1>
                 <div className='my-2 font-bold'>
                     <ChevronRightIcon className='h-8 w-8' />
                 </div>
             </div>
-            <div className='grid grid-cols-1 mx-4 md:mx-auto md:grid-cols-2 xl:grid-cols-3 gap-5 mt-5'>
+            <div className='grid grid-cols-1 mx-4 xl:mx-auto md:grid-cols-2 xl:grid-cols-3 gap-5 mt-5'>
                 <Card>
                     <CardHeader>
                         <CardTitle>Sports</CardTitle>
