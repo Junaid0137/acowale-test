@@ -15,11 +15,8 @@ async function Highlights() {
                     <ChevronRightIcon className='h-8 w-8' />
                 </div>
             </div>
-            <div className='grid grid-cols-2 gap-5 -mt-10 mx-4 md:mx-0'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 mx-4 md:mx-0'>
                 <Card className='bg-transparent border-none' >
-                    <CardHeader>
-                        <CardTitle>Sports</CardTitle>
-                    </CardHeader>
                     {sdata?.articles?.map((item, i) => (
                         <HighlightCard key={i} title={item.title} src={item.source} pubAt={item.publishedAt} url={item.url} desc={item.description} />
                     ))}

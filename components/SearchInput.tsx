@@ -30,7 +30,7 @@ function SearchInput() {
                     render={({ field }) => (
                         <FormItem>
                             <FormControl>
-                                <Input className='w-34 my-auto shadow-sm' placeholder='Search' {...field} />
+                                <Input className='w-24 md:w-44 mr-4 my-auto shadow-sm' placeholder='Search' {...field} />
                             </FormControl>
                         </FormItem>
                     )}

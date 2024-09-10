@@ -15,16 +15,15 @@ function MNav() {
         <nav className='w-full flex  flex-row my-7 justify-between'>
             <div className='pl-5 my-auto'>
                 <Link href={'/'}>
-                    <HomeIcon className='h-7 w-7 my-auto' />
+                    <HomeIcon className='h-6 w-6 my-auto' />
                 </Link>
             </div>
-            <div>
-                <SearchInput />
-            </div>
-            <div className='pr-5'>
+            <div className='pl-5'>
                 <NavigationMenu>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger>Category</NavigationMenuTrigger>
+                        <NavigationMenuTrigger>
+                            Category
+                        </NavigationMenuTrigger>
                         <NavigationMenuContent>
                             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                 <ListItem href={'/category/general'} title='General' />
@@ -39,6 +38,9 @@ function MNav() {
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                 </NavigationMenu>
+            </div>
+            <div className=''>
+                <SearchInput />
             </div>
         </nav>
     )
