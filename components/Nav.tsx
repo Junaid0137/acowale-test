@@ -17,7 +17,7 @@ function Nav() {
                 <MNav />
             </div>
             <div className='hidden md:block'>
-                <nav className='w-full flex my-7 mx-4 justify-cente'>
+                <nav className='w-full flex my-7 mx-4 xl:mx-auto justify-cente'>
                     <Link href={'/'} className='my-auto'>
                         <HomeIcon className='h-7 w-7 my-auto' />
                     </Link>
@@ -49,7 +49,7 @@ function Nav() {
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
-                    <div className='md:mr-8'>
+                    <div className='md:mr-8 xl:mr-0'>
                         <SearchInput />
                     </div>
                 </nav>
