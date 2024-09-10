@@ -7,7 +7,7 @@ function HighlightCard({ title, src, pubAt, url, desc }) {
     const dateObj = new Date(pubAt);
     const datePart = dateObj.toISOString().split('T')[0];
     return (
-        <CardContent className='bg-white rounded-xl mb-5 p-2 pt-5'>
+        <CardContent className='bg-white shadow-md border border-gray-300 rounded-xl mb-5 p-2 pt-5'>
             <div className='flex flex-row justify-between mx-4'>
                 <div className='space-y-3'>
                     <div className='mb-2'>

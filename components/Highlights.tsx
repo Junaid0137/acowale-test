@@ -16,12 +16,12 @@ async function Highlights() {
                 </div>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 mx-4 xl:mx-0'>
-                <Card className='bg-transparent border-none' >
+                <Card className='bg-transparent border-none shadow-none' >
                     {sdata?.articles?.map((item, i) => (
                         <HighlightCard key={i} title={item.title} src={item.source} pubAt={item.publishedAt} url={item.url} desc={item.description} />
                     ))}
                 </Card>
-                <Card className='bg-transparent border-none' >
+                <Card className='bg-transparent border-none shadow-none' >
                     {hdata?.articles?.map((item, i) => (
                         <HighlightCard key={i} title={item.title} src={item.source} pubAt={item.publishedAt} url={item.url} desc={item.description} />
                     ))}
